@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Countries Search Tool</title>
+    <style>
+        /* Simple styling for better visualization */
+        .input-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+	
+    <h2>Global Countries Search</h2>
+    
+    <form action="global_countries_search.php" method = "post">
+    
+    	<!-- Country Search -->
+        <div>
+            <h3>Country</h3>
+            
+            Keyword:
+            <input type="text" name="s_country_key">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_country_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_country_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+		<!-- GDP Search -->
+        <div>
+            <h3>GDP</h3>
+            
+            Range:
+            <label>
+	            <input type="radio" name="s_GDP_range" value="1tplus">1 trillion+
+            </label>
+            <label>
+                <input type="radio" name="s_GDP_range" value="250b1t">250 billion to 1 trillion
+            </label>
+            <label>
+                <input type="radio" name="s_GDP_range" value="250bless">Less than 250 billion
+            </label>
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_GDP_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_GDP_order" value="Desc">&#x2193;
+            </label>
+        </div>
+        
+        
+        <!-- Min Wage Search -->
+        <div>
+            <h3>Minimum Wage</h3>
+            
+            Min:
+            <input type="text" name="s_minwage_min">
+            Max:
+            <input type="text" name="s_minwage_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_minwage_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_minwage_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+
+		<!-- Population Search -->
+        <div>
+            <h3>Population</h3>
+            
+            Range:
+            <label>
+	            <input type="radio" name="s_pop_range" value="250mplus">250 million+
+            </label>
+            <label>
+                <input type="radio" name="s_pop_range" value="10m250m">10 million to 250 million
+            </label>
+            <label>
+                <input type="radio" name="s_pop_range" value="10mless">Less than 10 million
+            </label>
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_pop_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_pop_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+		<!-- Tax Rate Search -->
+        <div>
+            <h3>Tax Rate</h3>
+            
+            Min:
+            <input type="text" name="s_taxrate_min">
+            Max:
+            <input type="text" name="s_taxrate_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_taxrate_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_taxrate_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+		<!-- Tertiary Enrollment Search -->
+        <div>
+            <h3>Tertiary Enrollment</h3>
+            
+            Min:
+            <input type="text" name="s_tert_min">
+            Max:
+            <input type="text" name="s_tert_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_tert_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_tert_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+		<!-- Life Expectancy Search -->
+        <div>
+            <h3>Life Expectancy</h3>
+            
+            Min:
+            <input type="text" name="s_life_min">
+            Max:
+            <input type="text" name="s_life_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_life_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_life_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+		<!-- Latitude Search -->
+        <div>
+            <h3>Latitude</h3>
+            
+            Min:
+            <input type="text" name="s_lat_min">
+            Max:
+            <input type="text" name="s_lat_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_lat_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_lat_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+
+
+		<!-- Longitude Search -->
+        <div>
+            <h3>Longitude</h3>
+            
+            Min:
+            <input type="text" name="s_long_min">
+            Max:
+            <input type="text" name="s_long_max">
+            
+            <br>
+            
+            Order:
+            <label>
+	            <input type="radio" name="s_long_order" value="Asc">&#x2191;
+            </label>
+            <label>
+            	<input type="radio" name="s_long_order" value="Desc">&#x2193;
+            </label>
+        </div>
+
+		<br>
+    	<input type="Submit">
+        <input type="Reset">
+    </form>
+    
+</body>
+
+</html>
